@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="72" started-at="2023-06-23T04:59:21Z" finished-at="2023-06-23T04:59:21Z">
+  <suite name="Suite" duration-ms="78" started-at="2023-06-29T04:02:35Z" finished-at="2023-06-29T04:02:35Z">
     <groups>
-      <group name="Sanity">
-        <method signature="CarLoan.CarLoanwithWeb()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@7a52f2a2]" name="CarLoanwithWeb" class="BankingProject.LoanDepartmnent.CarLoan"/>
-        <method signature="HomeLoan.HomeLoanwithAPP()[pri:0, instance:BankingProject.LoanDepartmnent.HomeLoan@69930714]" name="HomeLoanwithAPP" class="BankingProject.LoanDepartmnent.HomeLoan"/>
-      </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="CarLoan.CarLoanwithAPP()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@7a52f2a2]" name="CarLoanwithAPP" class="BankingProject.LoanDepartmnent.CarLoan"/>
-        <method signature="CarLoan.CarLoanwithBranch()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@7a52f2a2]" name="CarLoanwithBranch" class="BankingProject.LoanDepartmnent.CarLoan"/>
-        <method signature="HomeLoan.HomeLoanwithWeb()[pri:0, instance:BankingProject.LoanDepartmnent.HomeLoan@69930714]" name="HomeLoanwithWeb" class="BankingProject.LoanDepartmnent.HomeLoan"/>
+        <method signature="CarLoan.CarLoanwithAPP()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@4387b79e]" name="CarLoanwithAPP" class="BankingProject.LoanDepartmnent.CarLoan"/>
+        <method signature="CarLoan.CarLoanwithBranch()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@4387b79e]" name="CarLoanwithBranch" class="BankingProject.LoanDepartmnent.CarLoan"/>
+        <method signature="HomeLoan.HomeLoanwithWeb()[pri:0, instance:BankingProject.LoanDepartmnent.HomeLoan@4f638935]" name="HomeLoanwithWeb" class="BankingProject.LoanDepartmnent.HomeLoan"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="Test" duration-ms="72" started-at="2023-06-23T04:59:21Z" finished-at="2023-06-23T04:59:21Z">
+    <test name="Test" duration-ms="78" started-at="2023-06-29T04:02:35Z" finished-at="2023-06-29T04:02:35Z">
       <class name="BankingProject.LoanDepartmnent.HomeLoan">
-        <test-method status="PASS" signature="HomeLoanwithAPP()[pri:0, instance:BankingProject.LoanDepartmnent.HomeLoan@69930714]" name="HomeLoanwithAPP" duration-ms="11" started-at="2023-06-23T04:59:21Z" finished-at="2023-06-23T04:59:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomeLoanwithAPP -->
-        <test-method status="PASS" signature="HomeLoanwithBranch()[pri:0, instance:BankingProject.LoanDepartmnent.HomeLoan@69930714]" name="HomeLoanwithBranch" duration-ms="0" started-at="2023-06-23T04:59:21Z" finished-at="2023-06-23T04:59:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomeLoanwithBranch -->
-        <test-method status="PASS" signature="HomeLoanwithWeb()[pri:0, instance:BankingProject.LoanDepartmnent.HomeLoan@69930714]" name="HomeLoanwithWeb" duration-ms="0" started-at="2023-06-23T04:59:21Z" finished-at="2023-06-23T04:59:21Z">
+        <test-method status="PASS" signature="HomeLoanwithWeb()[pri:0, instance:BankingProject.LoanDepartmnent.HomeLoan@4f638935]" name="HomeLoanwithWeb" duration-ms="14" started-at="2023-06-29T04:02:35Z" finished-at="2023-06-29T04:02:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomeLoanwithWeb -->
       </class> <!-- BankingProject.LoanDepartmnent.HomeLoan -->
       <class name="BankingProject.LoanDepartmnent.CarLoan">
-        <test-method status="PASS" signature="CarLoanwithAPP()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@7a52f2a2]" name="CarLoanwithAPP" duration-ms="1" started-at="2023-06-23T04:59:21Z" finished-at="2023-06-23T04:59:21Z">
+        <test-method status="PASS" signature="CarLoanwithAPP()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@4387b79e]" name="CarLoanwithAPP" duration-ms="0" started-at="2023-06-29T04:02:35Z" finished-at="2023-06-29T04:02:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CarLoanwithAPP -->
-        <test-method status="PASS" signature="CarLoanwithBranch()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@7a52f2a2]" name="CarLoanwithBranch" duration-ms="0" started-at="2023-06-23T04:59:21Z" finished-at="2023-06-23T04:59:21Z">
+        <test-method status="PASS" signature="CarLoanwithBranch()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@4387b79e]" name="CarLoanwithBranch" duration-ms="0" started-at="2023-06-29T04:02:35Z" finished-at="2023-06-29T04:02:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CarLoanwithBranch -->
-        <test-method status="PASS" signature="CarLoanwithWeb()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@7a52f2a2]" name="CarLoanwithWeb" duration-ms="4" started-at="2023-06-23T04:59:21Z" finished-at="2023-06-23T04:59:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CarLoanwithWeb -->
       </class> <!-- BankingProject.LoanDepartmnent.CarLoan -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

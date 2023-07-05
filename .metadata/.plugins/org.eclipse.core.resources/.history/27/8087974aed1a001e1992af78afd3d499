@@ -1,0 +1,17 @@
+package BankingProject.LoanDepartmnent;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+
+public class ReadDataFromExcel {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		FileInputStream fis = new FileInputStream("E:\\Testing Session\\SeleniumTraining\\AutomationTraining..xlsx");
+		
+		XSSFWorkbook 
+
+	}
+
+}

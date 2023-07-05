@@ -1,0 +1,64 @@
+package BankingProject.LoanDepartmnent;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ReadDataFromExcel {
+	
+	public static void getData(String trainername, String course) throws IOException
+	{
+		FileInputStream fis = new FileInputStream("E:\\Testing Session\\SeleniumTraining\\AutomationTraining.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		
+		int numofsheets = workbook.getNumberOfSheets();
+		//System.out.println("Total number of Sheets are : " +numofsheets);
+		
+		for(int i=0; i<numofsheets; i++)
+		{
+			//System.out.println(workbook.getSheetName(i)); 
+			if (workbook.getSheetName(i).equalsIgnoreCase("trainingdetails"))
+			{
+				XSSFSheet sheet = workbook.getSheetAt(i);
+				Iterator<Row>rows =  sheet.iterator();
+				Row firstrow = rows.next();
+				
+				Iterator<Cell> ce = firstrow.cellIterator();
+				int columnnum = 0;
+				while(ce.hasNext())
+				{
+					Cell columnname = ce.next();
+					//System.out.println(columnname);
+					if(columnname.getStringCellValue().equalsIgnoreCase(trainername))
+					{
+						columnnum=columnname.getColumnIndex();
+						//System.out.println("tutorname is in column number : " +columnnum);
+						break;
+					}
+				}
+				
+				
+			for(Row row:sheet)
+			{
+				Cell cellvalue = row.getCell(0);
+				//System.out.println(cellvalue);
+				if (cellvalue.getStringCellValue().equalsIgnoreCase(course))
+				{
+					System.out.println("The tutor name is : " +cellvalue.getRow().getCell(columnnum));
+					break;
+				}
+			}
+				
+			break;
+			}
+		}
+	}
+
+	
+}

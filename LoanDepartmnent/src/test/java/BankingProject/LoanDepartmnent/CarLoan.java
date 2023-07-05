@@ -1,8 +1,10 @@
 package BankingProject.LoanDepartmnent;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
-public class CarLoan {
+public class CarLoan extends ReadDataFromExcel{
 	
 	@Test(groups={"Sanity"})
 	public void CarLoanwithWeb()
@@ -17,8 +19,8 @@ public class CarLoan {
 	}
 	
 	@Test(groups={"Regression"})
-	public void CarLoanwithBranch()
+	public void CarLoanwithBranch() throws IOException
 	{
-		System.out.println("CarLoanwithBranch");
+		getData("TypeofTraining","TestComplete");
 	}
 }

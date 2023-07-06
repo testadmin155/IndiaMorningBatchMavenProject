@@ -1,0 +1,35 @@
+package BankingProject.LoanDepartmnent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage {
+	
+	//driver.findElement(By.id("username")).sendKeys("automationtestacademy@gmail.com");
+	
+	@FindBy(id="username")
+	WebElement email;
+	
+	//driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Test@9999");
+	@FindBy(xpath = "//input[@type='password']")
+	WebElement password;
+	
+	//driver.findElement(By.id("loginBtn")).click();
+	@FindBy(id = "loginBtn")
+	WebElement loginbtn;
+	
+	//ForgetPassword
+	
+	//Signup
+	
+	//Remember Checkbox
+	
+	public void login()
+	{
+		email.sendKeys("automationtestacademy@gmail.com");
+		password.sendKeys("Test@9999");
+		loginbtn.click();
+	}
+
+}

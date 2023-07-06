@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T05:21:06Z" name="Default suite" finished-at="2023-07-05T05:21:07Z" duration-ms="1084">
+  <suite started-at="2023-07-06T05:10:44Z" name="Default suite" finished-at="2023-07-06T05:10:48Z" duration-ms="4213">
     <groups>
-      <group name="Sanity">
-        <method signature="CarLoan.CarLoanwithWeb()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@6853425f]" name="CarLoanwithWeb" class="BankingProject.LoanDepartmnent.CarLoan"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="CarLoan.CarLoanwithAPP()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@6853425f]" name="CarLoanwithAPP" class="BankingProject.LoanDepartmnent.CarLoan"/>
-        <method signature="CarLoan.CarLoanwithBranch()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@6853425f]" name="CarLoanwithBranch" class="BankingProject.LoanDepartmnent.CarLoan"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-07-05T05:21:06Z" name="Default test" finished-at="2023-07-05T05:21:07Z" duration-ms="1084">
-      <class name="BankingProject.LoanDepartmnent.CarLoan">
-        <test-method signature="CarLoanwithAPP()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@6853425f]" started-at="2023-07-05T05:21:06Z" name="CarLoanwithAPP" finished-at="2023-07-05T05:21:06Z" duration-ms="18" status="PASS">
+    <test started-at="2023-07-06T05:10:44Z" name="Default test" finished-at="2023-07-06T05:10:48Z" duration-ms="4213">
+      <class name="BankingProject.LoanDepartmnent.LoginTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:BankingProject.LoanDepartmnent.LoginTest@41294f8]" started-at="2023-07-06T05:10:34Z" name="Setup" finished-at="2023-07-06T05:10:44Z" duration-ms="9790" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CarLoanwithAPP -->
-        <test-method signature="CarLoanwithBranch()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@6853425f]" started-at="2023-07-05T05:21:06Z" name="CarLoanwithBranch" finished-at="2023-07-05T05:21:07Z" duration-ms="1016" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="ValidLogin()[pri:0, instance:BankingProject.LoanDepartmnent.LoginTest@41294f8]" started-at="2023-07-06T05:10:44Z" name="ValidLogin" finished-at="2023-07-06T05:10:48Z" duration-ms="4125" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CarLoanwithBranch -->
-        <test-method signature="CarLoanwithWeb()[pri:0, instance:BankingProject.LoanDepartmnent.CarLoan@6853425f]" started-at="2023-07-05T05:21:07Z" name="CarLoanwithWeb" finished-at="2023-07-05T05:21:07Z" duration-ms="2" status="PASS">
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BankingProject.LoanDepartmnent.LoginTest@41294f8]" started-at="2023-07-06T05:10:48Z" name="Teardown" finished-at="2023-07-06T05:10:49Z" duration-ms="866" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CarLoanwithWeb -->
-      </class> <!-- BankingProject.LoanDepartmnent.CarLoan -->
+        </test-method> <!-- Teardown -->
+      </class> <!-- BankingProject.LoanDepartmnent.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

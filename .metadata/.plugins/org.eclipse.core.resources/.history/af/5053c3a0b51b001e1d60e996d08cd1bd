@@ -1,0 +1,14 @@
+package BankingProject.LoanDepartmnent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage {
+	
+	//driver.findElement(By.id("username")).sendKeys("automationtestacademy@gmail.com");
+	
+	@FindBy(id="username")
+	WebElement email;
+
+}
